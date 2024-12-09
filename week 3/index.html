@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Rekeningenbeheer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Rekeningenbeheer Dashboard</h1>
+    </header>
+    <main>
+      <section class="rekening-overzicht">
+        <h2>Overzicht Rekeningen</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Rekeningnummer</th>
+              <th>Saldo (€)</th>
+            </tr>
+          </thead>
+          <tbody id="rekening-tabel">
+            <!-- Dynamische rijen hier -->
+          </tbody>
+        </table>
+      </section>
+      <section class="rekening-toevoegen">
+        <h2>Nieuwe Rekening Aanmaken</h2>
+        <form id="rekening-form">
+          <label for="rekeningnummer">Rekeningnummer:</label>
+          <input type="text" id="rekeningnummer" required>
+          <label for="saldo">Startsaldo (€):</label>
+          <input type="number" id="saldo" required>
+          <button type="submit">Toevoegen</button>
+        </form>
+      </section>
+    </main>
+  </div>
+<script src="java.js"></script>
+</body>
+</html>
